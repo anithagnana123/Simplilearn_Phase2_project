@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="simplilearn.model.ClassSubTeach" table="class_sub_teach">
+     
+     <composite-id >
+          <key-property name="teacher_id" column="teacher_id"></key-property>
+          <key-many-to-one name="classsub" class="simplilearn.model.ClassSubData" unique="true" not-null="true"/> 
+     </composite-id>  
+      
+   
+          
+</class>
+
+</hibernate-mapping>

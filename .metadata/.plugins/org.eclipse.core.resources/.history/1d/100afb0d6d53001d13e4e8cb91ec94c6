@@ -1,0 +1,40 @@
+package simplilearn.model;
+
+
+public class SubInfo {
+	
+	private static final long serialVersionUID = 1L;   
+	private int sub_id;
+	private String class_sec;
+	
+	public int getClass_id() {
+		return sub_id;
+	}
+	public void setClass_id(int class_id) {
+		this.sub_id = class_id;
+	}
+
+	
+	public String getClass_sec() {
+		return class_sec;
+	}
+	public void setClass_sec(String class_sec) {
+		this.class_sec = class_sec;
+	}
+	
+	private SubInfo() {
+		//private constructor
+	}
+	
+	//Inner class to provide instance of class
+    private static class BillPughSingleton
+    {
+		private static final SubInfo INSTANCE = new SubInfo();
+    }
+		 
+    public static SubInfo getInstance()
+	{
+		return BillPughSingleton.INSTANCE;
+    }
+		
+}

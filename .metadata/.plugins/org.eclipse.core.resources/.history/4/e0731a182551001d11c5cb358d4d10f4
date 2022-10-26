@@ -1,0 +1,31 @@
+package simplilearn.model;
+
+public class ClassSubData {
+	
+	private String class_sub_id;
+	private ClassInfo theclass;
+	private String subject;
+	private String time;
+	
+	public String getClass_sub_id() {
+		return class_sub_id;
+	}
+	public void setClass_sub_id(String class_sub_id) {
+		this.class_sub_id = class_sub_id;
+	}
+	public ClassInfo getTheclass() {
+		return theclass;
+	}
+	public void setTheclass(ClassInfo theclass) {
+		this.theclass = theclass;
+	}
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	
+
+
+}

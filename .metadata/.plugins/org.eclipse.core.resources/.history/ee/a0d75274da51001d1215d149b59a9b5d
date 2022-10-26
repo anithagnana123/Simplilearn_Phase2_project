@@ -1,0 +1,36 @@
+package simplilearn.model;
+
+public class ClassSubData {
+	
+	private ClassInfo theclass;
+	private String subject;
+	
+	public ClassInfo getTheclass() {
+		return theclass;
+	}
+	public void setTheclass(ClassInfo theclass) {
+		this.theclass = theclass;
+	}
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	
+	private ClassSubData() {
+		setTheclass(ClassInfo.getInstance());
+	}
+	
+	//Inner class to provide instance of class
+    private static class BillPughSingleton
+    {
+		private static final ClassSubData INSTANCE = new ClassSubData();
+    }
+		 
+    public static ClassSubData getInstance()
+	{
+		return BillPughSingleton.INSTANCE;
+    }
+
+}

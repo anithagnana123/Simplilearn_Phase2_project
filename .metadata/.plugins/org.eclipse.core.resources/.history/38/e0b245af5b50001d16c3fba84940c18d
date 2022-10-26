@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>learners-academy-student-info</title>
+</head>
+<body>
+<h2>Learner's Academy Student Information</h2>
+<hr color="blue" size ="5"/>
+
+<form method="get" action="/phase2-project/addstudent">
+    <br> <input type='submit' value='Add student'/>
+</form>
+
+<form method="get" action="/phase2-project/updatestudent">
+    <br> <input type='submit' value='Update teacher profile'/>
+</form>
+
+<form method="get" action="/phase2-project/deletestudent">
+    <br> <input type='submit' value='Delete teacher'/>
+</form>
+
+<form method="get" action="/phase2-project/viewstudent.jsp">
+    <br> <input type='submit' value='View student list'/>
+    <br> <input type='hidden' name='operation' value='viewstudent'/>
+</form>
+
+
+</body>
+</html>

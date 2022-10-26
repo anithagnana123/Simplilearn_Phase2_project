@@ -1,0 +1,40 @@
+package simplilearn.model;
+
+public class ClassSubTeach {
+	
+	private int fr_teach_id;
+	private ClassSubData classsub;
+	
+	public ClassSubData getClasssub() {
+		return classsub;
+	}
+
+	public void setClasssub(ClassSubData classsub) {
+		this.classsub = classsub;
+	}
+
+	public int getFr_teach_id() {
+		return fr_teach_id;
+	}
+
+	public void setFr_teach_id(int fr_teach_id) {
+		this.fr_teach_id = fr_teach_id;
+	}
+
+	private ClassSubTeach() {
+		// private constructor
+		setClasssub(ClassSubData.getInstance());
+	}
+	
+	//Inner class to provide instance of class
+    private static class BillPughSingleton
+    {
+		private static final ClassSubTeach INSTANCE = new ClassSubTeach();
+    }
+		 
+    public static ClassSubTeach getInstance()
+	{
+		return BillPughSingleton.INSTANCE;
+    }
+
+}

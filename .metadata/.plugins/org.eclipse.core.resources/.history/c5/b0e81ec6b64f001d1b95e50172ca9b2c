@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="simplilearn.model.Student" table="student_info">
+     <id name="student_id">
+         <column name = "student_id"/>
+         <generator class = "identity"/>
+     </id>
+
+      <property name="firstName">
+         <column name ="firstName"/>
+      </property>
+  
+      <property name="lastName">
+         <column name ="lastName"/>
+      </property>
+      
+      <property name="dateOfBirth">
+         <column name ="dateOfBirth"/>
+      </property>
+      
+          
+       <many-to-one name="theclass" class="simplilearn.model.ClassInfo" cascade="all" >
+           <column name="standard"  not-null="true" ></column>
+           <column name="class_sec" not-null="true" ></column>
+       </many-to-one>
+            
+            
+</class>
+
+</hibernate-mapping>

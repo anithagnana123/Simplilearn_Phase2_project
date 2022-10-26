@@ -1,0 +1,48 @@
+package simplilearn.model;
+
+import java.io.Serializable;
+
+public class ClassSubTeach {
+	
+	private int class_info_id;
+	private ClassInfo theclass; 
+	private fr_teach_id;
+	private String subject;
+	private
+	
+	public int getStandard() {
+		return standard;
+	}
+	public void setStandard(int standard) {
+		this.standard = standard;
+	}
+	public String getClass_sec() {
+		return class_sec;
+	}
+	public void setClass_sec(String class_sec) {
+		this.class_sec = class_sec;
+	}
+	
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	
+	private ClassSubTeach() {
+		// private constructor
+	}
+	
+	//Inner class to provide instance of class
+    private static class BillPughSingleton
+    {
+		private static final ClassSubTeach INSTANCE = new ClassSubTeach();
+    }
+		 
+    public static ClassSubTeach getInstance()
+	{
+		return BillPughSingleton.INSTANCE;
+    }
+
+}

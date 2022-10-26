@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>learners-academy-class-info</title>
+</head>
+<body>
+<h2>Learner's Academy Class Information</h2>
+<hr color="blue" size ="5"/>
+
+<form method="get" action="/phase2-project/addclass">
+    <br> <input type='submit' value='Add class'/>
+</form>
+
+<form method="get" action="/phase2-project/viewclass.jsp">
+    <br> <input type='submit' value='View Teachers list'/>
+    <br> <input type='hidden' name='operation' value='viewteacher'/>
+</form>
+
+</body>
+</html>

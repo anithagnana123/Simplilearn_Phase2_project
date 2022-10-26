@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>class-sub-teach-info</title>
+</head>
+<body>
+<h2>Learner's Academy Class Teacher Subject Information</h2>
+<hr color="blue" size ="5"/>
+
+<form method="get" action="/phase2-project/classsub.jsp">
+    <br> <input type='submit' value='Assign a class to a subject'/>
+</form>
+
+<form method="get" action="/phase2-project/viewclasssub.jsp">
+    <br> <input type='submit' value='View Class subject information'/>
+</form>
+
+<form method="get" action="/phase2-project/welcome">
+    <br> <input type='submit' value='home page'/>
+</form>
+
+</body>
+</html>

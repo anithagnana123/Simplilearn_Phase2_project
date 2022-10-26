@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="simplilearn.model.ClassSubData" table="class_subject">
+     
+     <composite-id >
+          <key-property name="subject" column="subject"></key-property>
+       
+     </composite-id>    
+  
+      <many-to-one name="theclass" class="simplilearn.model.ClassInfo" cascade="all" >
+           <column name="standard" ></column>
+           <column name="class_sec" ></column>
+      </many-to-one>
+      
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,6 @@
+package simplilearn.model;
+
+public class Snippet {
+	 <td><input type="submit" value="assign"/></td>
+}
+
