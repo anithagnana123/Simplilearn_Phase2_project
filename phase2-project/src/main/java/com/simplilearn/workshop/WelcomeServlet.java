@@ -51,7 +51,8 @@ public class WelcomeServlet extends HttpServlet {
 	    out.println("<a href = \"classsub.html\">Click here for Class Subject Information</a>");
 	    out.println("<br> <br>");
 	    out.println("<a href = \"classsubteach.html\">Click here for Class Subject Teacher Information</a>");
-	   
+	    out.println("<br> <br>");
+	    out.println("<a href = \"classreport.jsp\">Click here for Class report</a>");
 	    
 	    out.println("&nbsp;");
 	    out.println("<form action='logout' method='get'>");
